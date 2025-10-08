@@ -151,7 +151,7 @@ While this is a personal learning repository, suggestions and discussions are we
 ## 📫 Connect
 
 - **GitHub**: [@dachraoui-ui](https://github.com/dachraoui-ui)
-- **LeetCode**: [Your LeetCode Profile]
+- **LeetCode**: [dachraoui]
 
 ---
 
