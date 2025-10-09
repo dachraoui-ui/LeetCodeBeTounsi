@@ -11,3 +11,17 @@ class Solution(object):
             for j in range(len(nums)) :
                 if(nums[j] + nums[i] == target and i != j ) : 
                     return i , j 
+
+    
+        # Solution 2 : 
+        # here using a single loop and using the logic of substracting the target number 
+        # from the number of the array , and search if the target - num[i] available in array or not 
+        # O(n²) time complexity 
+        
+        for i in range (len(nums)) :
+            if(target - nums[i] in nums[:i] + nums[i+1:] ):
+                if(nums[i] == target - nums[i] ) :
+                    return i , nums.index(target -nums[i] , i + 1)
+                else : 
+                    return i, nums.index(target-nums[i]) 
+
