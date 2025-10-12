@@ -13,7 +13,7 @@ class Solution(object):
                     return i , j 
 
     
-        # Solution 2 : 
+        # ? Solution 2 : 
         # here using a single loop and using the logic of substracting the target number 
         # from the number of the array , and search if the target - num[i] available in array or not 
         # O(n²) time complexity 
@@ -25,3 +25,23 @@ class Solution(object):
                 else : 
                     return i, nums.index(target-nums[i]) 
 
+
+
+        # ? thrid solution 3 : 
+        """To avoid using 2 loops and O(n²) we use the hashMap so at first initializing 
+        the map so when putting values on it we can access them by the key or value 
+        instantly so that reduce the O(n²) to O(n) .
+
+        The enumrate function that let me loop through a list giving me the index and the values 
+        X is the differance between target and num 
+        the if condition search for the key x in the hashMap cause when searching like that in hashMap we 
+        search by the key after that we check if that key exist in the hashMap if yes return the index 
+        of the element in the real list and the index of the x number in the hashMap (value) .
+        the final step is when the if condition is false that key <--- value (i) (index)
+    """
+        hashM = {} 
+        for i , num in enumerate(nums) : 
+            x = target - num 
+            if x in hashM : 
+                return i, hashM[x]
+            hashM[num] = i
