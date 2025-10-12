@@ -39,6 +39,9 @@ class Solution(object):
         of the element in the real list and the index of the x number in the hashMap (value) .
         the final step is when the if condition is false that key <--- value (i) (index)
     """
+        # time complexity O(n)
+        # Mermory complexity O(n)
+
         hashM = {} 
         for i , num in enumerate(nums) : 
             x = target - num 
