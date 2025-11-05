@@ -7,4 +7,6 @@ class Solution(object):
                 nums.append(target)
                 nums.sort()
                 return nums.index(target)
+            
+#there is a better one 
         
