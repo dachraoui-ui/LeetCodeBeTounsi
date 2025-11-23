@@ -29,3 +29,7 @@ class Solution(object):
                 count-=1
         return guess
 # todo : explain this solutin ...
+#this solution uses the boyer moore algo , it makes a guess for the majority number then count his appeariance if the current
+# guess == the current number count ++ and if the guess is different to the current number count -- and if we hit the 0 
+# we change the guess (look it as we want to cancel any different number and the more same number is presented he will 
+# survive ) 
