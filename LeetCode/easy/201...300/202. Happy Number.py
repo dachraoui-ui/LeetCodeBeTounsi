@@ -12,3 +12,4 @@ class Solution(object):
                 res = res + int(i)**2
             n = str(res)
 
+# todo : explanation 
