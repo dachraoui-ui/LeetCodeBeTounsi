@@ -16,4 +16,4 @@ class Solution(object):
 # so in this implementation i convert n to a string so i can perferm string and list actions on it 
 # so the condition of happy number is that each power 2 digit added together should give a 1 so the result should be 
 # 10eN . so the idea is performing the pw 2 of each digits and each number we get we put it in a list l[], 
-# and every time we get the res we check if it's in the l or not to not perform an endless loopp 👌
+# and every time we get the res we check if it's in the l or not to not perform an endless loopp 👌.
