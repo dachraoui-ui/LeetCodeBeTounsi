@@ -6,7 +6,7 @@ class Solution:
 # 👇
 # here a better solution with O(n) time complexity
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+   def isAnagram(self, s: str, t: str) -> bool:
       alph = [0] * 26
       for i in s : 
          alph[ord(i) - ord('a')]+=1
@@ -16,7 +16,8 @@ class Solution:
          if k != 0 : 
             return False 
       return True 
-
+   
+# or a better solution but with counter object from collections 
 
 #!test : 
 sl = Solution() 
