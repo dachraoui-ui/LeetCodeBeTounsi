@@ -10,4 +10,4 @@ class Solution:
         
  # this solution use O(1) means no extra space and with O(n) time complexity 
  # at first we make a simple loop with index i and if that element is diff to 0
- # then we permut between i and j and j goes for the next 0    
+ # then we permut between i and j and j goes for the next 0     

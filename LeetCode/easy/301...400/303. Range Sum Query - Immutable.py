@@ -1,0 +1,16 @@
+from typing import List
+
+class NumArray:
+
+    def __init__(self, nums: List[int] = None):
+        self.prefix = [0]*len(nums)
+        self.prefix[0] = nums[0]
+
+        for i in range (1,len(nums)):
+            self.prefix[i] = self.prefix[i-1] + nums[i]
+
+    def sumRange(self, left: int, right: int) -> int:
+        if left == 0 : 
+            return self.prefix[right]
+        else : 
+            return self.prefix[right] - self.prefix[left-1]
