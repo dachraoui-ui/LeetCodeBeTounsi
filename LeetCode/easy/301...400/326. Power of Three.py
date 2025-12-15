@@ -24,3 +24,18 @@ class Solution :
 s = Solution()
 n = 21
 print(s.isPowerOfThree(n))
+# this solution with recursivity
+
+
+class Solution:
+    def isPowerOfThree(self, n: int) -> bool:
+        max_pow3 = pow(3,19)
+        if n <= 0 or max_pow3 % n != 0: 
+            return False 
+        else :
+            return True 
+         
+# now this solution with O(1) time complexity 
+        
+         
+        
