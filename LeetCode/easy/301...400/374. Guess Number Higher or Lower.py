@@ -29,3 +29,4 @@ class Solution:
 # to get the right answer to start decrising the interval of searching and this is what binary search 
 # does and for the guess function and self.guess no need to put them , i put them just to prevent my 
 # python editor problems of knowing the function guess 
+# with O(log n ) time complexity cause it's a binary search and O(1) space complexity cause no extra space 
