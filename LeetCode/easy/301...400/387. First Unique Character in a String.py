@@ -8,5 +8,5 @@ class Solution:
                 return s.index(i)
         return -1
      
-
+# nothing to explain , undrestand the Counter to ease the undrestand 
         
