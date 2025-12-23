@@ -22,4 +22,15 @@ class Solution:
 # equality i add to the s_hash that letter with the real index of it in t without counting the other non existing letters 
 # after that i loop through the s_hash and we check if the letter in s and s_hash in the same index are the same or not , 
 # before we did this loop we check the length of the s_hash and s if different or not in the case we found "a" and "b" as inputs 
-       
+class Solution:
+   def isSubsequence(self, s: str, t: str) -> bool:
+         i = 0
+         for c in t : 
+            if i < len(s) and s[i] == c :
+               i+=1
+         return i == len(s)     
+      
+# a simpler solution without using a extra space 
+#  another solution but using two pointer without extra space we first start the loop in t 
+# and each time we get s[i] == c add 1 to i to check the other letter in s and if the letter didn't exist 
+# we complete the loop in t without making the condition i == len(s) True , So we get False 
